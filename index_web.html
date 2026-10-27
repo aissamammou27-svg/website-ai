@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUMIÈRE | Eléna Vance — Fine Art & Editorial Photography</title>
+  <meta name="description" content="Award-winning fine art, portrait, architectural, and editorial photography by Eléna Vance. Paris · Tokyo · New York." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230a0b0e' stroke='%23d4af37' stroke-width='6'/><circle cx='50' cy='50' r='20' fill='%23d4af37'/></svg>" />
+
+  <!-- Google Fonts: Playfair Display (Serif), Plus Jakarta Sans (Sans), JetBrains Mono (EXIF) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Grain Overlay for Film Aesthetic -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Lumière Photography Home">
+        <div class="brand-symbol">L</div>
+        <div class="brand-text">
+          <span class="brand-name">Lumière</span>
+          <span class="brand-subtitle">Eléna Vance · Studio</span>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#gallery" class="nav-link">Portfolio</a></li>
+          <li><a href="#about" class="nav-link">The Artist</a></li>
+          <li><a href="#services" class="nav-link">Investment</a></li>
+          <li><a href="#testimonials" class="nav-link">Accolades</a></li>
+          <li><a href="#contact" class="nav-link">Inquiries</a></li>
+        </ul>
+      </nav>
+
+      <!-- Navigation Actions -->
+      <div class="nav-actions">
+        <!-- Theme Switcher Dropdown -->
+        <div class="theme-dropdown">
+          <button class="icon-btn" id="themeToggleBtn" title="Change Theme Style" aria-label="Change Theme">
+            <i class="fa-solid fa-palette"></i>
+          </button>
+          <div class="theme-menu" id="themeMenu">
+            <button class="theme-item active" data-theme="dark">
+              <i class="fa-solid fa-moon"></i> Cinema Dark
+            </button>
+            <button class="theme-item" data-theme="warm">
+              <i class="fa-solid fa-sun"></i> Warm Sepia
+            </button>
+            <button class="theme-item" data-theme="light">
+              <i class="fa-solid fa-mountain-sun"></i> Light Gallery
+            </button>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn-primary">
+          <i class="fa-regular fa-calendar-check"></i> Book Session
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="icon-btn mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <i class="fa-solid fa-circle-dot"></i> Fine Art & Editorial Photography
+          </div>
+          <h1 class="hero-title">
+            Capturing the <em>unspoken poetry</em> of light, shadow, and human solitude.
+          </h1>
+          <p class="hero-description">
+            Award-winning visual storytelling crafted with medium-format precision and vintage rangefinder intimacy. Exhibited across galleries in Paris, Tokyo, and Zurich.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#gallery" class="btn-primary">
+              <i class="fa-solid fa-images"></i> Explore Portfolio
+            </a>
+            <a href="#about" class="btn-outline">
+              <i class="fa-regular fa-compass"></i> Artist Statement
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num">12+</span>
+              <span class="stat-label">Years of Vision</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">48</span>
+              <span class="stat-label">Global Exhibitions</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">19</span>
+              <span class="stat-label">Honors & Awards</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Showcase Frame -->
+        <div class="hero-visual">
+          <div class="hero-card-stack">
+            <div class="hero-image-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=85" 
+                alt="Portrait of woman in warm amber light by Eléna Vance" 
+              />
+              <div class="hero-floating-badge">
+                <div class="floating-badge-info">
+                  <h4>Solitude in Amber (No. 04)</h4>
+                  <p>Reykjavík, Iceland · Series VIII</p>
+                </div>
+                <div class="gear-pill">
+                  <i class="fa-solid fa-camera"></i> Leica M11-P
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio / Gallery Section -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Curated Folio</span>
+          <h2 class="section-title">Selected Photographic Works</h2>
+          <p class="section-subtitle">
+            A meticulous archive spanning intimate portraiture, visceral landscapes, modernist architecture, and unchoreographed street observations.
+          </p>
+        </div>
+
+        <!-- Controls: Category Filters & View Switcher -->
+        <div class="gallery-controls-wrapper">
+          <div class="filter-bar" role="tablist" aria-label="Portfolio Category Filters">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+              All Works <span class="count">12</span>
+            </button>
+            <button class="filter-btn" data-filter="portrait" role="tab" aria-selected="false">
+              Portraits <span class="count">4</span>
+            </button>
+            <button class="filter-btn" data-filter="landscape" role="tab" aria-selected="false">
+              Landscapes <span class="count">3</span>
+            </button>
+            <button class="filter-btn" data-filter="architecture" role="tab" aria-selected="false">
+              Architecture <span class="count">3</span>
+            </button>
+            <button class="filter-btn" data-filter="street" role="tab" aria-selected="false">
+              Street & Noir <span class="count">2</span>
+            </button>
+            <button class="filter-btn" data-filter="wildlife" role="tab" aria-selected="false">
+              Wildlife <span class="count">1</span>
+            </button>
+          </div>
+
+          <!-- View Layout Switcher -->
+          <div class="view-switcher" aria-label="Gallery Display Modes">
+            <button class="view-btn active" data-view="masonry" title="Masonry Flow" aria-label="Masonry layout">
+              <i class="fa-solid fa-table-columns"></i>
+            </button>
+            <button class="view-btn" data-view="compact" title="Compact Grid" aria-label="Compact grid layout">
+              <i class="fa-solid fa-grip"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Gallery Grid (Rendered Dynamically via main.js) -->
+        <div class="gallery-grid masonry-view" id="galleryGrid">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About the Artist Section -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-portrait-wrapper">
+          <div class="about-portrait">
+            <img 
+              src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1000&q=85" 
+              alt="Portrait of photographer Eléna Vance with rangefinder camera in street daylight" 
+            />
+          </div>
+          <div class="experience-badge">
+            <div class="exp-number">12</div>
+            <div class="exp-text">Years of Practice</div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-tag">Behind the Lens</span>
+          <h2>Eléna Vance</h2>
+          <p class="about-lead">
+            "Photography is never merely about recording reality; it is the deliberate practice of extracting meaning from the quietest corners of existence."
+          </p>
+          <p class="about-text">
+            Born in Lyon and based between Paris and Tokyo, Eléna Vance approaches photography with an austere editorial sensibility and an painterly reverence for natural illumination. Having studied under classical printmakers, she crafts images that balance rigorous geometric composition with profound emotional resonance.
+          </p>
+          <p class="about-text">
+            Her commissions have appeared in <em>Architectural Digest</em>, <em>Vogue</em>, <em>Monocle</em>, and <em>Hasselblad Masters</em> publications, while her fine art prints are held in private collections across four continents.
+          </p>
+
+          <!-- Equipment & Craftsmanship Breakdown -->
+          <div class="gear-list-grid">
+            <div class="gear-card">
+              <i class="fa-solid fa-camera gear-icon"></i>
+              <div class="gear-info">
+                <h5>Leica M11-P & Q3</h5>
+                <p>Rangefinder Craftsmanship</p>
+              </div>
+            </div>
+            <div class="gear-card">
+              <i class="fa-solid fa-box-archive gear-icon"></i>
+              <div class="gear-info">
+                <h5>Hasselblad X2D 100C</h5>
+                <p>100MP Medium Format</p>
+              </div>
+            </div>
+            <div class="gear-card">
+              <i class="fa-solid fa-bullseye gear-icon"></i>
+              <div class="gear-info">
+                <h5>Summilux & APO Primes</h5>
+                <p>German Optics Precision</p>
+              </div>
+            </div>
+            <div class="gear-card">
+              <i class="fa-solid fa-gem gear-icon"></i>
+              <div class="gear-info">
+                <h5>Hahnemühle Cotton Rag</h5>
+                <p>Archival Museum Prints</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="photographer-signature">
+            Eléna Vance
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services & Pricing Section -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Commissions & Packages</span>
+          <h2 class="section-title">Investment & Services</h2>
+          <p class="section-subtitle">
+            Tailored creative engagements for visionary brands, architects, editorial publications, and private individuals.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Package 1: Fine Art Portraiture -->
+          <div class="service-card">
+            <div>
+              <i class="fa-regular fa-user service-icon"></i>
+              <h3>Fine Art Portraits</h3>
+              <p class="service-desc">
+                Intimate, character-driven portraiture conducted in natural light or private studio. Focused on authentic character and editorial poise.
+              </p>
+              <div class="service-price">
+                $1,250 <span>/ session</span>
+              </div>
+              <ul class="service-features">
+                <li><i class="fa-solid fa-check"></i> 2.5-hour tailored shooting session</li>
+                <li><i class="fa-solid fa-check"></i> 2 distinct locations or wardrobe changes</li>
+                <li><i class="fa-solid fa-check"></i> 18 master-retouched high-res deliverables</li>
+                <li><i class="fa-solid fa-check"></i> Private online viewing lounge</li>
+                <li><i class="fa-solid fa-check"></i> Full personal print release rights</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn-outline">Inquire Session</a>
+          </div>
+
+          <!-- Package 2: Editorial & Brand (Featured) -->
+          <div class="service-card featured">
+            <span class="popular-badge">Most Requested</span>
+            <div>
+              <i class="fa-solid fa-wand-magic-sparkles service-icon"></i>
+              <h3>Editorial & Brand</h3>
+              <p class="service-desc">
+                Comprehensive visual campaigns for luxury fashion, watchmakers, and creative agencies requiring unforgettable brand identity.
+              </p>
+              <div class="service-price">
+                $2,950 <span>/ day rate</span>
+              </div>
+              <ul class="service-features">
+                <li><i class="fa-solid fa-check"></i> Full-day creative direction & production</li>
+                <li><i class="fa-solid fa-check"></i> Complete medium-format 100MP captures</li>
+                <li><i class="fa-solid fa-check"></i> 40 hand-finished commercial assets</li>
+                <li><i class="fa-solid fa-check"></i> Global commercial usage licensing</li>
+                <li><i class="fa-solid fa-check"></i> Dedicated lighting & digital technician</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn-primary">Reserve Production</a>
+          </div>
+
+          <!-- Package 3: Architectural & Space -->
+          <div class="service-card">
+            <div>
+              <i class="fa-solid fa-landmark service-icon"></i>
+              <h3>Architecture & Spaces</h3>
+              <p class="service-desc">
+                Rigorous structural studies documenting residential villas, boutique hotels, and landmark cultural institutions at twilight.
+              </p>
+              <div class="service-price">
+                $2,200 <span>/ project</span>
+              </div>
+              <ul class="service-features">
+                <li><i class="fa-solid fa-check"></i> Dawn and dusk multi-exposure capture</li>
+                <li><i class="fa-solid fa-check"></i> Perspective tilt-shift optical correction</li>
+                <li><i class="fa-solid fa-check"></i> Interior & exterior ambient blending</li>
+                <li><i class="fa-solid fa-check"></i> Press kit curation & magazine licensing</li>
+                <li><i class="fa-solid fa-check"></i> 25 ultra-high-resolution master files</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn-outline">Request Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials / Accolades Section -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Words from Collaborators</span>
+          <h2 class="section-title">Critical Acclaim & Endorsements</h2>
+          <p class="section-subtitle">
+            Reflections from magazine curators, gallery directors, and creative visionaries who have partnered with our studio.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "Eléna possesses that rare, instinctive sixth sense for available light. Her portraits don't just depict faces; they distill an entire life story into a single, breathtaking frame."
+            </p>
+            <div class="client-meta">
+              <div class="client-avatar">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Camille Laurent" />
+              </div>
+              <div>
+                <div class="client-name">Camille Laurent</div>
+                <div class="client-role">Senior Art Director, Vogue Paris</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "Commissioning Eléna for our flagship Kyoto pavilion was the best decision we made. She understood the geometry of shadows as thoroughly as our lead architects."
+            </p>
+            <div class="client-meta">
+              <div class="client-avatar">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Kenji Takahashi" />
+              </div>
+              <div>
+                <div class="client-name">Kenji Takahashi</div>
+                <div class="client-role">Partner, Takahashi & Associates Architects</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "Working with her was completely tranquil and inspiring. The fine art prints now hanging in our Zurich residence stop every guest in their tracks."
+            </p>
+            <div class="client-meta">
+              <div class="client-avatar">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Astrid von Berg" />
+              </div>
+              <div>
+                <div class="client-name">Astrid von Berg</div>
+                <div class="client-role">Private Collector, Zurich</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking / Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-layout">
+          <!-- Information Column -->
+          <div class="contact-info-col">
+            <span class="section-tag">Start a Dialogue</span>
+            <h3>Let's create timeless imagery together.</h3>
+            <p class="contact-lead">
+              Currently accepting editorial assignments, private portrait sessions, and architectural commissions worldwide for upcoming seasons.
+            </p>
+
+            <div class="contact-details-list">
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="detail-text">
+                  <h6>Direct Inquiries</h6>
+                  <p>elena@lumiere-studio.com</p>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="detail-text">
+                  <h6>Atelier & Studio</h6>
+                  <p>14 Rue de Bellechasse, 75007 Paris, France</p>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="detail-text">
+                  <h6>Telephone</h6>
+                  <p>+33 (0)1 42 68 90 12</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Presence -->
+            <div class="social-links">
+              <a href="#" class="social-btn" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-btn" title="Behance" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+              <a href="#" class="social-btn" title="500px" aria-label="500px"><i class="fa-brands fa-500px"></i></a>
+              <a href="#" class="social-btn" title="VSCO" aria-label="VSCO"><i class="fa-solid fa-camera-retro"></i></a>
+            </div>
+          </div>
+
+          <!-- Interactive Form -->
+          <div class="contact-form-box">
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="clientName">Your Full Name *</label>
+                  <input type="text" id="clientName" class="form-input" placeholder="e.g. Julian Hayes" required />
+                </div>
+                <div class="form-group">
+                  <label for="clientEmail">Email Address *</label>
+                  <input type="email" id="clientEmail" class="form-input" placeholder="julian@example.com" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="serviceType">Type of Engagement</label>
+                  <select id="serviceType" class="form-select">
+                    <option value="portrait">Fine Art Portrait Session</option>
+                    <option value="editorial">Editorial / Brand Campaign</option>
+                    <option value="architecture">Architectural Commission</option>
+                    <option value="licensing">Fine Art Print Licensing</option>
+                    <option value="exhibition">Gallery / Exhibition Curation</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="targetDate">Target Date / Season</label>
+                  <input type="date" id="targetDate" class="form-input" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="projectVision">Creative Vision & Scope *</label>
+                <textarea id="projectVision" class="form-textarea" placeholder="Tell us about the concept, location, timeline, and key deliverables..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" style="width: 100%;">
+                <i class="fa-solid fa-paper-plane"></i> Transmit Inquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Photograph details modal">
+    <div class="lightbox-container">
+      <!-- Image Display Area -->
+      <div class="lightbox-stage">
+        <button class="lightbox-nav-btn prev" id="lightboxPrevBtn" title="Previous Photograph" aria-label="Previous photograph">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="lightbox-img-wrapper">
+          <img src="" alt="" class="lightbox-img" id="lightboxImg" />
+        </div>
+
+        <button class="lightbox-nav-btn next" id="lightboxNextBtn" title="Next Photograph" aria-label="Next photograph">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <!-- Information & EXIF Sidebar -->
+      <aside class="lightbox-sidebar">
+        <div>
+          <div class="lightbox-header-actions">
+            <span class="lightbox-counter" id="lightboxCounter">1 / 12</span>
+            <button class="lightbox-close-btn" id="lightboxCloseBtn" title="Close Viewer (ESC)" aria-label="Close modal">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <div class="lightbox-info">
+            <span class="lightbox-category-badge" id="lightboxCategory">PORTRAIT</span>
+            <h3 class="lightbox-title" id="lightboxTitle">Solitude in Amber</h3>
+            <p class="lightbox-location" id="lightboxLocation">
+              <i class="fa-solid fa-location-dot"></i> Reykjavík, Iceland
+            </p>
+            <p class="lightbox-story" id="lightboxStory">
+              Captured in the raw autumn chill. The natural golden sidelight accentuated the quiet contemplation of the subject.
+            </p>
+          </div>
+
+          <!-- Camera EXIF Metadata -->
+          <div class="lightbox-exif-card">
+            <div class="exif-card-title">
+              <i class="fa-solid fa-sliders"></i> Exposure & Optics (EXIF)
+            </div>
+            <div class="exif-grid">
+              <div class="exif-item">
+                <span class="exif-label">Camera</span>
+                <span class="exif-value" id="exifCamera">Leica M11-P</span>
+              </div>
+              <div class="exif-item">
+                <span class="exif-label">Aperture</span>
+                <span class="exif-value" id="exifAperture">ƒ/1.4</span>
+              </div>
+              <div class="exif-item">
+                <span class="exif-label">Shutter</span>
+                <span class="exif-value" id="exifShutter">1/800s</span>
+              </div>
+              <div class="exif-item">
+                <span class="exif-label">ISO</span>
+                <span class="exif-value" id="exifIso">ISO 64</span>
+              </div>
+              <div class="exif-item">
+                <span class="exif-label">Focal Length</span>
+                <span class="exif-value" id="exifFocal">35mm</span>
+              </div>
+              <div class="exif-item">
+                <span class="exif-label">Lens</span>
+                <span class="exif-value" id="exifLens" style="font-size:0.75rem;">Summilux 35mm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lightbox Footer Actions -->
+        <div class="lightbox-bottom-actions">
+          <button class="btn-outline" id="lightboxLikeBtn" style="flex: 1;">
+            <i class="fa-regular fa-heart"></i> Favorite
+          </button>
+          <button class="btn-outline" id="lightboxShareBtn" title="Copy shareable link" aria-label="Share photograph">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+          </button>
+          <button class="btn-outline" id="lightboxFullscreenBtn" title="Fullscreen" aria-label="Toggle Fullscreen">
+            <i class="fa-solid fa-expand"></i>
+          </button>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" title="Back to Top" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 1.25rem;">
+            <div class="brand-symbol">L</div>
+            <div class="brand-text">
+              <span class="brand-name">Lumière</span>
+              <span class="brand-subtitle">Eléna Vance · Studio</span>
+            </div>
+          </div>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; max-width: 320px; line-height: 1.7;">
+            Visual arts practice devoted to preserving delicate instances of atmosphere, architecture, and the human condition.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Portfolio Archive</a></li>
+            <li><a href="#about">Artist Statement</a></li>
+            <li><a href="#services">Investment & Rates</a></li>
+            <li><a href="#contact">Direct Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Galleries</h4>
+          <ul class="footer-links">
+            <li><a href="#gallery">Portraiture</a></li>
+            <li><a href="#gallery">Landscape & Alpine</a></li>
+            <li><a href="#gallery">Brutalist Geometry</a></li>
+            <li><a href="#gallery">Tokyo & NYC Noir</a></li>
+            <li><a href="#gallery">Fine Art Editions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Private Journal</h4>
+          <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.6; margin-bottom: 0.8rem;">
+            Receive unreleased prints, exhibition previews, and travel essays directly to your inbox.
+          </p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Your email address" class="newsletter-input" required />
+            <button type="submit" class="btn-primary" style="padding: 0.65rem 1.25rem;">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 LUMIÈRE STUDIO / ELÉNA VANCE. ALL RIGHTS RESERVED.</p>
+        <p>Curated with Leica M & Medium Format Systems. Designed for high fidelity.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

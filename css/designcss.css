@@ -1,0 +1,145 @@
+body{
+  background: grey;
+}
+.circle-card{
+position:relative ;
+width: 240px;
+padding: 30px;
+border-radius: 16px;
+background: #1a1a2e;
+color: #fff;
+overflow: hidden;
+cursor: pointer;
+
+}
+
+.circle-card::before{
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 60px;
+ height: 60px;
+ border-radius: 50%;
+ background: linear-gradient(135deg, #00eaff, #6a00ff);
+ transition: transform 0.6s cubic-bezier(.4, 0,.2,1);
+}
+
+.circle-card>* {
+  position: relative;
+}
+
+.circle-card:hover::before{
+transform: scale(9.6) ;
+}
+
+.circle-card h3 {
+  margin: 0 0 6px;
+}
+
+.circle-card p {
+margin: 0;
+font-size: 0.85rem;
+color: #999;
+transition: color 0.4s ease
+}
+
+.circle-card:hover p {
+  color: #fff;
+}
+/* partie de button */
+
+.box {
+position: relative;
+width: 300px;
+height: 100px;
+color: #fff;
+border-radius: 16px;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.box::before {
+content: "";
+position: absolute;
+inset: -50%;
+background: conic-gradient(from 0deg,
+       transparent 0%,
+       #00e5ff 15%,
+       transparent 30%
+);
+-webkit-animation: spin 3s linear infinite;
+        animation: spin 3s linear infinite;
+}
+
+.box::after{
+content: "";
+position: absolute;
+inset: 3px;
+background: #111;
+border-radius: 14px;
+}
+
+@-webkit-keyframes spin {
+to {
+  transform: rotate(360deg);
+}
+}
+
+@keyframes spin {
+to {
+  transform: rotate(360deg);
+}
+}
+/* this is for rotating light */
+
+.box input {
+padding: 8px 12px;
+width: 80%;
+height: 70px;
+border-radius: 50px;
+outline: none;
+border: none;
+font-family: inherit;
+font-size: 14px;
+border: 2px solid #ddd;
+}
+
+.error,.success {
+  display: none;
+  font-size: 13px;
+  margin: 6px 0 0;
+  font-family: inherit;
+}
+
+.field:has(input:invalid:not(:placeholder-shown)) input {
+  border-color: #ff0000;
+  
+}
+.field:has(input:invalid:not(:placeholder-shown)) .error {
+  display: block;
+  color: #ff0000;
+}
+.field:has(input:valid:not(:placeholder-shown)) input {
+  border-color: #00ff00;
+  
+}
+.field:has(input:valid:not(:placeholder-shown)) .success {
+  display: block;
+  color: #00ff00;
+}
+/* this is for the form validation */
+
+
+
+
+
+
+
+
+
+
+
